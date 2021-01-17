@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="62dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="68dp"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bestTime"
+        app:layout_constraintStart_toEndOf="@+id/bestTime"
+        tools:text="15ms" />
+
+    <TextView
+        android:id="@+id/minesweeper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/minesweeper"
+        android:textColor="#C62828"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bestTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/bestTime"
+        app:layout_constraintStart_toStartOf="@+id/minesweeper"
+        app:layout_constraintTop_toBottomOf="@+id/minesweeper" />
+
+    <TextView
+        android:id="@+id/LastGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/lastGame"
+        app:layout_constraintStart_toStartOf="@+id/bestTime"
+        app:layout_constraintTop_toBottomOf="@+id/bestTime" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/difficulty"
+        android:textColor="#070000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/minesweeper"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/minesweeper"
+        app:layout_constraintTop_toBottomOf="@+id/LastGame" />
+
+    <Button
+        android:id="@+id/customBoard"
+        android:layout_width="195dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="32dp"
+        android:background="#252323"
+        android:text="@string/customeBoard"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="58dp"
+        android:layout_height="24dp"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/LastGame"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        tools:text="15ms" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="181dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <RadioButton
+            android:id="@+id/easy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/easy" />
+
+        <RadioButton
+            android:id="@+id/medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/medium"
+            android:onClick="onRadioButtonClicked" />
+
+        <RadioButton
+            android:id="@+id/hard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hard"
+            android:onClick="onRadioButtonClicked" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/startGame"
+        android:layout_width="99dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="56dp"
+        android:background="#050000"
+        android:text="@string/start"
+        android:textColor="#F8F6F6"
+        app:layout_constraintEnd_toEndOf="@+id/customBoard"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="@+id/customBoard"
+        app:layout_constraintTop_toBottomOf="@+id/customBoard" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

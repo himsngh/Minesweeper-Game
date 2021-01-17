@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Minesweeper</string>
+    <string name="minesweeper">MINESWEEPER</string>
+    <string name="bestTime">Best Time :</string>
+    <string name="last" />
+    <string name="lastGame">Last Game Time :</string>
+    <string name="difficulty">Select Difficulty</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+    <string name="customeBoard">Create a Custom Board</string>
+    <string name="start">Start Game</string>
+    <string name="customheight">No. of Rows :</string>
+    <string name="custom_cols">No. Of Columns :</string>
+    <string name="dialogInfo">Enter the no of rows and columns</string>
+    <string name="numberOfMines">No. Of Mines :</string>
+    <string name="minesLeft">Mines</string>
+    <string name="restart">Restart</string>
+    <string name="time">Time</string>
+</resources>
